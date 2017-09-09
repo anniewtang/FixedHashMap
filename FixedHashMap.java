@@ -45,8 +45,6 @@ public class FixedHashMap<T> {
         insertPair(key, value, index);
         this.fill++;
         updateLoad();
-//        System.out.println("load: " + load);
-//        System.out.println("fill: " + fill);
         return true;
     }
 
@@ -113,6 +111,7 @@ public class FixedHashMap<T> {
      *    > if we don't find a Pair with the same key, add that Pair to the "front" of the "linked Pairs"
      *      > update the now-second Pair.prev in the bucket to point to the new Pair
      */
+    @SuppressWarnings("unchecked")
     private void insertPair(String k, T v, int i) {
         Pair p = (Pair) arr[i];
         if (p == null) {
@@ -148,6 +147,7 @@ public class FixedHashMap<T> {
      *  2. iterates through bucket to find the Pair with the matching key
      *  3. if found, return the Pair. otherwise, return null.
      */
+    @SuppressWarnings("unchecked")
     private Pair findPair(String k) {
         int index = hashIndex(k);
         Pair p = (Pair) arr[index];
@@ -161,7 +161,6 @@ public class FixedHashMap<T> {
     }
 
     public static void main(String[] args) {
-        FixedHashMap testInt= new FixedHashMap(3);
     }
 
 }
