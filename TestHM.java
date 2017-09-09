@@ -12,13 +12,13 @@ public class TestHM {
     public FixedHashMap<String> testStr = new FixedHashMap<>(10);
 
     public void setUp() {
-        testInt.set("First", 1);
-        testInt.set("Second", 2);
-        testInt.set("Third", 3);
-        testInt.set("Fourth", 3);
-        testStr.set("01", "serendipity");
-        testStr.set("02", "courage");
-        testStr.set("03", "laundry");
+        System.out.println(testInt.set("First", 1));
+        System.out.println(testInt.set("Second", 2));
+        System.out.println(testInt.set("Third", 3));
+        System.out.println(testInt.set("Fourth", 3));
+        System.out.println(testStr.set("01", "serendipity"));
+        System.out.println(testStr.set("02", "courage"));
+        System.out.println(testStr.set("03", "laundry"));
     }
 
     @Test
