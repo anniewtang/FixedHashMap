@@ -5,11 +5,13 @@ public class FixedHashMap<T> {
     private int load;
     private Pair[] arr;
 
+    /** private helper class Pair
+     *  encapsulates the String-Value pair, in a linked list fashion
+     */
     private class Pair {
         String key;
         T value;
         Pair next;
-        Pair prev;
 
         private Pair(String k, T v) {
             this.key = k;
@@ -21,20 +23,12 @@ public class FixedHashMap<T> {
             this.next = n;
         }
 
-       /* private method to abstract away reassignment/value-deletion */
-        private void reassign() {
-            if (this.next != null) {
-                this.next = this.next.next;
-            }
-        }
-
     }
 
-    // return an instance of the class with pre-allocated space for the given number of objects.
+    /** return an instance of the class with pre-allocated space for the given number of objects. */
     public FixedHashMap(int size) {
         this.capacity = size;
         arr = (Pair[]) new Object[capacity];
-//        arr = new Pair<T>[capacity];
         fill = 0;
         updateLoad();
     }
@@ -54,7 +48,9 @@ public class FixedHashMap<T> {
         return true;
     }
 
-    /** return the value associated with the given key, or null if no value is set. **/
+    /** get(key)
+     *  > returns the value associated with the given key, or null if no value is set.
+     *  > also returns null if there is no such key that exists in map **/
     public T get(String key) {
         Pair p = findPair(key);
         if (p != null) {
@@ -63,13 +59,14 @@ public class FixedHashMap<T> {
         return null;
     }
 
-    /** delete()
+    /** delete(key)
      *  > delete the value associated with the given key,
-     * >  returning the value on success or null if the key has no value. **/
+     *  > returning the value on success or null if the key has no value.
+     *  > also returns null if key does not exist in map**/
     public T delete(String key) {
         Pair p = findPair(key);
         if (p != null) {
-            return deletePair(p);
+            return deleteValue(p);
         }
         return null;
     }
@@ -127,36 +124,20 @@ public class FixedHashMap<T> {
             }
             p = p.next;
         }
-        Pair unique = new Pair(k, v);
-        Pair first = arr[i];
-        unique.next = first;
-        first.prev = unique;
+        Pair unique = new Pair(k, v, arr[i]);
         arr[i] = unique;
     }
 
-    /** deletePair
-     *  > will always return SOME value
-     *  > this is only called in the context of p being a Pair that matches with given key
-     *  1. checks if Pair p is the first pair in the bucket
-     *     > if so, sets bucket content to be p.next
-     *     > if not, readjust pointers so p is excluded
-     *  2. return p.value
+    /** deleteValue
+     *  > returns null if p has no value
+     *  > otherwise, sets value to be null and returns value
      */
-    private T deletePair(Pair p) {
-        Pair prev = p.prev;
-        Pair next = p.next;
+    private T deleteValue(Pair p) {
         T value = p.value;
-
-        if (prev == null) {
-            int index = hashIndex(p.key);
-            arr[index] = next;
-            next.prev = null;
-        } else {
-            prev.next = next;
-            next.prev = prev;
+        if (value != null) {
+            p.value = null;
         }
         return value;
-
     }
 
     /** helper method: findPair
