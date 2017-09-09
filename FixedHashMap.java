@@ -1,9 +1,9 @@
 public class FixedHashMap<T> {
 
     private int capacity;
-    private int fill;
-    private int load;
-    private Pair[] arr;
+    private float fill;
+    private float load;
+    private Object[] arr;
 
     /** private helper class Pair
      *  encapsulates the String-Value pair, in a linked list fashion
@@ -28,8 +28,8 @@ public class FixedHashMap<T> {
     /** return an instance of the class with pre-allocated space for the given number of objects. */
     public FixedHashMap(int size) {
         this.capacity = size;
-        arr = (Pair[]) new Object[capacity];
-        fill = 0;
+        this.arr = new Object[capacity];
+        this.fill = 0;
         updateLoad();
     }
 
@@ -45,6 +45,8 @@ public class FixedHashMap<T> {
         insertPair(key, value, index);
         this.fill++;
         updateLoad();
+//        System.out.println("load: " + load);
+//        System.out.println("fill: " + fill);
         return true;
     }
 
@@ -54,7 +56,7 @@ public class FixedHashMap<T> {
     public T get(String key) {
         Pair p = findPair(key);
         if (p != null) {
-            return p.value;
+            return (T) p.value;
         }
         return null;
     }
@@ -112,7 +114,7 @@ public class FixedHashMap<T> {
      *      > update the now-second Pair.prev in the bucket to point to the new Pair
      */
     private void insertPair(String k, T v, int i) {
-        Pair p = arr[i];
+        Pair p = (Pair) arr[i];
         if (p == null) {
             arr[i] = new Pair(k, v);
             return;
@@ -124,7 +126,7 @@ public class FixedHashMap<T> {
             }
             p = p.next;
         }
-        Pair unique = new Pair(k, v, arr[i]);
+        Pair unique = new Pair(k, v, (Pair) arr[i]);
         arr[i] = unique;
     }
 
@@ -133,7 +135,7 @@ public class FixedHashMap<T> {
      *  > otherwise, sets value to be null and returns value
      */
     private T deleteValue(Pair p) {
-        T value = p.value;
+        T value = (T) p.value;
         if (value != null) {
             p.value = null;
         }
@@ -148,7 +150,7 @@ public class FixedHashMap<T> {
      */
     private Pair findPair(String k) {
         int index = hashIndex(k);
-        Pair p = arr[index];
+        Pair p = (Pair) arr[index];
         while (p != null) {
             if (p.key.equals(k)) {
                 return p;
@@ -159,6 +161,7 @@ public class FixedHashMap<T> {
     }
 
     public static void main(String[] args) {
+        FixedHashMap testInt= new FixedHashMap(3);
     }
 
 }

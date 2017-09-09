@@ -16,21 +16,65 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FixedHashMap.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FixedHashMap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FixedHashMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="57" column="23" lean-forward="false" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+            <state relative-caret-position="136">
+              <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
               <folding>
-                <element signature="e#849#850#0" expanded="true" />
-                <element signature="e#876#877#0" expanded="true" />
-                <element signature="e#1591#1600#0" expanded="true" />
+                <element signature="class#Pair#0;class#FixedHashMap#0" expanded="false" />
+                <element signature="method#Pair#0;class#Pair#0;class#FixedHashMap#0" expanded="false" />
+                <element signature="method#Pair#1;class#Pair#0;class#FixedHashMap#0" expanded="false" />
+                <element signature="method#FixedHashMap#0;class#FixedHashMap#0" expanded="false" />
+                <element signature="docComment;method#set#0;class#FixedHashMap#0" expanded="false" />
+                <element signature="method#set#0;class#FixedHashMap#0" expanded="false" />
+                <element signature="docComment;method#get#0;class#FixedHashMap#0" expanded="false" />
+                <element signature="method#get#0;class#FixedHashMap#0" expanded="false" />
+                <element signature="docComment;method#delete#0;class#FixedHashMap#0" expanded="false" />
+                <element signature="method#delete#0;class#FixedHashMap#0" expanded="false" />
+                <element signature="docComment;method#load#0;class#FixedHashMap#0" expanded="false" />
+                <element signature="docComment;method#updateLoad#0;class#FixedHashMap#0" expanded="false" />
+                <element signature="docComment;method#isFull#0;class#FixedHashMap#0" expanded="false" />
+                <element signature="docComment;method#hashIndex#0;class#FixedHashMap#0" expanded="false" />
+                <element signature="method#hashIndex#0;class#FixedHashMap#0" expanded="false" />
+                <element signature="docComment;method#insertPair#0;class#FixedHashMap#0" expanded="false" />
+                <element signature="method#insertPair#0;class#FixedHashMap#0" expanded="false" />
+                <element signature="docComment;method#deleteValue#0;class#FixedHashMap#0" expanded="false" />
+                <element signature="method#deleteValue#0;class#FixedHashMap#0" expanded="false" />
+                <element signature="docComment;method#findPair#0;class#FixedHashMap#0" expanded="false" />
+                <element signature="method#findPair#0;class#FixedHashMap#0" expanded="false" />
+                <marker date="1504979248000" expanded="false" signature="131:237" ph="/**...*/" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestHM.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TestHM.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#main#0;class#TestHM#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>size</find>
+    </findStrings>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -41,6 +85,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/FixedHashMap.java" />
+        <option value="$PROJECT_DIR$/TestHM.java" />
       </list>
     </option>
   </component>
@@ -70,23 +115,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="kbcp" />
+              <option name="myItemId" value="kpcb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="kbcp" />
+              <option name="myItemId" value="kpcb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -99,8 +144,9 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.FixedHashMap">
+  <component name="RunManager" selected="JUnit.TestHM.testGet">
     <configuration default="false" name="FixedHashMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="FixedHashMap" />
@@ -114,6 +160,27 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="kbcp" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestHM.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="kbcp" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestHM" />
+      <option name="METHOD_NAME" value="testGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -353,6 +420,7 @@
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
       <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -474,6 +542,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -489,12 +563,14 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.FixedHashMap" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestHM.testGet" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.FixedHashMap" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestHM.testGet" />
+        <item index="1" class="java.lang.String" itemvalue="Application.FixedHashMap" />
       </list>
     </recent_temporary>
   </component>
@@ -512,12 +588,16 @@
       <option name="presentableId" value="Default" />
       <updated>1504852706939</updated>
       <workItem from="1504852710343" duration="637000" />
-      <workItem from="1504929409694" duration="2247000" />
+      <workItem from="1504929409694" duration="2492000" />
+      <workItem from="1504935488349" duration="422000" />
+      <workItem from="1504969219675" duration="400000" />
+      <workItem from="1504971854945" duration="5069000" />
+      <workItem from="1504977825547" duration="1552000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2884000" />
+    <option name="totallyTimeSpent" value="10572000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -526,31 +606,31 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Style Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2253635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23828755" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -563,7 +643,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -577,21 +657,194 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#849#850#0" expanded="true" />
-            <element signature="e#876#877#0" expanded="true" />
-            <element signature="e#1591#1600#0" expanded="true" />
+            <element signature="class#Pair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#Pair#0;class#Pair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#Pair#1;class#Pair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#FixedHashMap#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#set#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#set#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#get#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#get#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#delete#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#delete#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#load#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#updateLoad#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#isFull#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#hashIndex#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#hashIndex#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#insertPair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#insertPair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#deleteValue#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#deleteValue#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#findPair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#findPair#0;class#FixedHashMap#0" expanded="false" />
+            <marker date="1504979248000" expanded="false" signature="131:237" ph="/**...*/" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FixedHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="57" column="23" lean-forward="false" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#849#850#0" expanded="true" />
-            <element signature="e#876#877#0" expanded="true" />
-            <element signature="e#1591#1600#0" expanded="true" />
+            <element signature="class#Pair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#Pair#0;class#Pair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#Pair#1;class#Pair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#FixedHashMap#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#set#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#set#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#get#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#get#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#delete#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#delete#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#load#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#updateLoad#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#isFull#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#hashIndex#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#hashIndex#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#insertPair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#insertPair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#deleteValue#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#deleteValue#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#findPair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#findPair#0;class#FixedHashMap#0" expanded="false" />
+            <marker date="1504979248000" expanded="false" signature="131:237" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FixedHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="class#Pair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#Pair#0;class#Pair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#Pair#1;class#Pair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#FixedHashMap#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#set#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#set#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#get#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#get#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#delete#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#delete#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#load#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#updateLoad#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#isFull#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#hashIndex#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#hashIndex#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#insertPair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#insertPair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#deleteValue#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#deleteValue#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#findPair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#findPair#0;class#FixedHashMap#0" expanded="false" />
+            <marker date="1504979248000" expanded="false" signature="131:237" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FixedHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+          <folding>
+            <element signature="class#Pair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#Pair#0;class#Pair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#Pair#1;class#Pair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#FixedHashMap#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#set#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#set#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#get#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#get#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#delete#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#delete#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#load#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#updateLoad#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#isFull#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#hashIndex#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#hashIndex#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#insertPair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#insertPair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#deleteValue#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#deleteValue#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#findPair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#findPair#0;class#FixedHashMap#0" expanded="false" />
+            <marker date="1504979248000" expanded="false" signature="131:237" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FixedHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="class#Pair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#Pair#0;class#Pair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#Pair#1;class#Pair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#FixedHashMap#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#set#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#set#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#get#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#get#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#delete#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#delete#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#load#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#updateLoad#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#isFull#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#hashIndex#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#hashIndex#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#insertPair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#insertPair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#deleteValue#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#deleteValue#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#findPair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#findPair#0;class#FixedHashMap#0" expanded="false" />
+            <marker date="1504979248000" expanded="false" signature="131:237" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FixedHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding>
+            <element signature="class#Pair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#Pair#0;class#Pair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#Pair#1;class#Pair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#FixedHashMap#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#set#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#set#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#get#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#get#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#delete#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#delete#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#load#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#updateLoad#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#isFull#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#hashIndex#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#hashIndex#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#insertPair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#insertPair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#deleteValue#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#deleteValue#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="docComment;method#findPair#0;class#FixedHashMap#0" expanded="false" />
+            <element signature="method#findPair#0;class#FixedHashMap#0" expanded="false" />
+            <marker date="1504979248000" expanded="false" signature="131:237" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestHM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#TestHM#0" expanded="false" />
           </folding>
         </state>
       </provider>
