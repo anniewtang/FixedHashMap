@@ -1,24 +1,24 @@
-public class FixedHashMap<T> {
+public class FixedHashMap {
 
     private int capacity;
     private float fill;
     private float load;
-    private Object[] arr;
+    private Pair[] arr;
 
     /** private helper class Pair
      *  encapsulates the String-Value pair, in a linked list fashion
      */
     private class Pair {
         String key;
-        T value;
+        Object value;
         Pair next;
 
-        private Pair(String k, T v) {
+        private Pair(String k, Object v) {
             this.key = k;
             this.value = v;
         }
 
-        private Pair(String k, T v, Pair n) {
+        private Pair(String k, Object v, Pair n) {
             this(k, v);
             this.next = n;
         }
@@ -28,7 +28,7 @@ public class FixedHashMap<T> {
     /** return an instance of the class with pre-allocated space for the given number of objects. */
     public FixedHashMap(int size) {
         this.capacity = size;
-        this.arr = new Object[capacity];
+        this.arr = new Pair[capacity];
         this.fill = 0;
         updateLoad();
     }
@@ -37,7 +37,7 @@ public class FixedHashMap<T> {
      * stores the given key/value pair in the hash map.
      * returns a boolean value indicating success / failure of the operation.
      * also updates fill count & load if insertion was successful **/
-    public boolean set(String key, T value) {
+    public boolean set(String key, Object value) {
         if (isFull()) {
             return false;
         }
@@ -51,10 +51,10 @@ public class FixedHashMap<T> {
     /** get(key)
      *  > returns the value associated with the given key, or null if no value is set.
      *  > also returns null if there is no such key that exists in map **/
-    public T get(String key) {
+    public Object get(String key) {
         Pair p = findPair(key);
         if (p != null) {
-            return (T) p.value;
+            return p.value;
         }
         return null;
     }
@@ -63,7 +63,7 @@ public class FixedHashMap<T> {
      *  > delete the value associated with the given key,
      *  > returning the value on success or null if the key has no value.
      *  > also returns null if key does not exist in map**/
-    public T delete(String key) {
+    public Object delete(String key) {
         Pair p = findPair(key);
         if (p != null) {
             return deleteValue(p);
@@ -111,9 +111,8 @@ public class FixedHashMap<T> {
      *    > if we don't find a Pair with the same key, add that Pair to the "front" of the "linked Pairs"
      *      > update the now-second Pair.prev in the bucket to point to the new Pair
      */
-    @SuppressWarnings("unchecked")
-    private void insertPair(String k, T v, int i) {
-        Pair p = (Pair) arr[i];
+    private void insertPair(String k, Object v, int i) {
+        Pair p = arr[i];
         if (p == null) {
             arr[i] = new Pair(k, v);
             return;
@@ -125,7 +124,7 @@ public class FixedHashMap<T> {
             }
             p = p.next;
         }
-        Pair unique = new Pair(k, v, (Pair) arr[i]);
+        Pair unique = new Pair(k, v, arr[i]);
         arr[i] = unique;
     }
 
@@ -133,8 +132,8 @@ public class FixedHashMap<T> {
      *  > returns null if p has no value
      *  > otherwise, sets value to be null and returns value
      */
-    private T deleteValue(Pair p) {
-        T value = (T) p.value;
+    private Object deleteValue(Pair p) {
+        Object value = p.value;
         if (value != null) {
             p.value = null;
         }
@@ -147,10 +146,9 @@ public class FixedHashMap<T> {
      *  2. iterates through bucket to find the Pair with the matching key
      *  3. if found, return the Pair. otherwise, return null.
      */
-    @SuppressWarnings("unchecked")
     private Pair findPair(String k) {
         int index = hashIndex(k);
-        Pair p = (Pair) arr[index];
+        Pair p = arr[index];
         while (p != null) {
             if (p.key.equals(k)) {
                 return p;

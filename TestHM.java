@@ -8,8 +8,8 @@ import org.junit.Test;
 //float load(): return a float value representing the load factor (`(items in hash map)/(size of hash map)`) of the data structure. Since the size of the dat structure is fixed, this should never be greater than 1.
 
 public class TestHM {
-    public FixedHashMap<Integer> testInt= new FixedHashMap<>(3);
-    public FixedHashMap<String> testStr = new FixedHashMap<>(10);
+    public FixedHashMap testInt= new FixedHashMap(3);
+    public FixedHashMap testStr = new FixedHashMap(10);
 
     public void setUp() {
         System.out.println(testInt.set("First", 1));
